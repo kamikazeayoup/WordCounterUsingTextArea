@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>  
+    <script src="JQuery Plugin/highlight-within-textarea/jquery.highlight-within-textarea.js"></script>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Interactive Word Counter</title>
+</head>
+<body>
+
+    <div class="begin">
+        <h1>Interactive Word Counter</h1>
+    </div>
+    
+    <div class="container">
+
+
+       
+        <form onsubmit="CountWords(event)">
+            <label for="textar" id="textarlabel">Enter The Text</label>
+            <textarea id="textar" name="writecontent" class="writecontent" rows="5"></textarea><br>
+
+
+            <div class="buttons-container">
+                <input type="submit" value="count" class="submit">
+                <button type="button" class="clearbtn" id = "clearbtn">Clear</button>
+            </div>
+        
+        </form>
+
+        <div class="summary">
+
+            <p id="result">Total Words : <span style="color: red;">0 </span></p>
+        </div>
+    </div>
+    
+</body>
+</html>
+
